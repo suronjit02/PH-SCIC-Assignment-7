@@ -1,11 +1,12 @@
-function reverseString(str) {
+function isPalingdrome(str) {
   let reversedString = "";
 
   for (let i = str.length - 1; i >= 0; i--) {
     reversedString += str[i];
-  }
-  return reversedString;
+    }
+  return str === reversedString;
 }
 
-const test = reverseString("suronjit");
+const test = isPalingdrome('hello');
+
 console.log(test);
